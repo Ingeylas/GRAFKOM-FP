@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(background.png);
+  background-size: cover;
+  background-position: center;
+}
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #0055ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+.content h1 {
+  font-size: 50px;
+  margin-top: 140px;
+}
+.content p {
+  margin-top: 5px;
+  margin-bottom: 45px;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+.Teamrow {
+  border-top: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  color: white;
+}
+.Teamcolumn {
+  width: 17.3%;
+  padding: 0.5em 0;
+  margin-left: 2em;
+  border: 1px solid white;
+}
+.Teamrow h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  font-family: Roboto;
+  color: #fff;
+}
+.Teamcard {
+  padding: 3.5em 1em;
+  border-radius: 0, 6em;
+}
+.Teamcard .TeamImg {
+  width: 8em;
+  height: 8em;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+.Teamcard img {
+  width: 100%;
+  border-radius: 50%;
+}
+.Teamcard h3 {
+  font-family: roboto;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+
+.Teamcolumn:hover {
+  background: linear-gradient(#0055ff, #1160ff);
+  color: #fff;
+}
+
+.htprow {
+  border-top: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  color: transparent;
+}
+.htprow h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  font-family: Roboto;
+  color: #fff;
+}
+.htprow p {
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  font-family: Roboto;
+  color: #fff;
+}
+.htpcolumn {
+  height: 17.3%;
+  border: 1px solid white;
+  padding: 0.5em 0;
+  margin-left: 2em;
+}
+
+button {
+  width: 180px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #0055ff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span {
+  background: #0055ff;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span {
+  width: 100%;
+}
+button:hover {
+  border: none;
+}
